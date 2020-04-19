@@ -1,0 +1,126 @@
+<ion-content [fullscreen]="true" [scrollEvents]="true">
+  
+  <!-- WelcomePost -->
+  <section class="container-fluid mt-5">
+    <ion-row>
+
+      <ion-col size="12" size-md="8">
+
+        <div class="welcome-post mx-3">
+          <img src="../../assets/img/941121.jpg" alt="">
+          <div class="post-content">
+            <a href="" class="tag">Title</a>
+            <a href="" class="post-title">Top 10 Gang Life</a>
+          </div>
+        </div>
+
+      </ion-col>
+
+      <ion-col size="12" size-md="4">
+        
+        <ion-searchbar  cancelButtonText="Custom Cancel"></ion-searchbar>
+        <br><hr>
+        <h3 class="trends-section-title mb-3">Categories</h3>
+        <div class="category">
+          <div class="nav">
+            <a href="" class="p-2 m-2">Technology</a>
+            <a href="" class="p-2 m-2">Tutorials</a>
+            <a href="" class="p-2 m-2">Code</a>
+            <a href="" class="p-2 m-2">News</a>
+            <a href="" class="p-2 m-2">PHP</a>
+            <a href="" class="p-2 m-2">API</a>
+            <a href="" class="p-2 m-2">HTML</a>
+          </div>
+        </div>
+
+        
+      </ion-col>
+
+    </ion-row>
+  </section>
+  <!-- End Of -->
+
+  <!-- TRENDS SECTION -->
+  <section class="trends-section">
+
+    <h3 class="trends-section-title mb-3">Trending</h3>
+
+    <ion-row>
+
+      <ion-col size="12" size-md="4" *ngFor="let blog of blogs">
+        <div class="trends">
+          <img src="../../assets/img/976887.jpg" alt="">
+          <div class="trends-content">
+            <a href="" class="trends-tag">{{blog.tag}}</a>
+            <a href="" class="trends-title">{{blog.title}}</a>
+          </div>
+        </div>
+      </ion-col>
+
+      
+
+    </ion-row>
+  </section>
+  <!-- END -->
+
+
+  <!-- Latest Section -->
+  <section class="latest-section">
+    <h3 class="trends-section-title mb-3">Latest</h3>
+    <ion-row class="">
+
+      <ion-col size="12" size-md="6" *ngFor="let latest of latests">
+        <div class="card m-2">
+          <img class="card-img-top" src="../../assets/img/941121.jpg" alt="Card image cap">
+          <div class="card-body">
+            <a href="" class="">
+              <p class="card-text">{{latest.title}}</p>
+            </a>
+          </div>
+          <div class="card-footer text-muted">
+            <ion-icon name="calendar" class="mx-1"></ion-icon>
+            June 16, 2019 by
+            <a href="#">{{latest.author}}</a>
+          </div>
+        </div>
+      </ion-col>
+
+      
+         <!-- Pagination -->
+         <ul class="pagination justify-content-center m-4">
+          <li class="page-item">
+            <a class="page-link" href="#">&larr; Older</a>
+          </li>
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Newer &rarr;</a>
+          </li>
+        </ul>
+
+    </ion-row>
+  </section>
+  <!-- End of Latest Section -->
+
+
+
+  <!-- Subscribe section -->
+  <section class="subsribe-section">
+    
+    <ion-row>
+
+      <ion-col size="12" size-md="4">
+        <h3 class="trends-section-title mb-3">Newsletter</h3>
+
+        <p>
+          Subscribe to our newsletter to get notification on new updates and news accross the globe
+        </p>
+
+        <input type="text" name="" id="" placeholder="Email Address" class="form-control my-3">
+        <ion-button expand="full" fill="outline" color="dark">Subscribe</ion-button>
+      </ion-col>
+
+      <ion-col></ion-col>
+
+    </ion-row>
+  </section>
+  <!-- End of subscribe section -->
+</ion-content>

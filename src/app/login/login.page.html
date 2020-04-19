@@ -1,0 +1,66 @@
+<ion-content>
+
+  <div class="wrapper row">
+
+    <div class="col-12 col-lg-8 mx-auto container" id="container" #container>
+
+        <div id="" class="logInBox form-container form-group text-center">
+            <form action="#">
+                <h1 class="text-center">Sign In</h1>
+                <input type="text" name="username" placeholder="Username" class="form-control my-4" required="">
+
+                <input type="password" name="password" placeholder="Password" class="form-control my-4" required="">
+                <input type="password" name="password" placeholder="Repeat Password" class="form-control my-4" required="">
+
+                <div class="checkbox" style="float: left;" >
+                    <label><input type="checkbox" class="mr-2" name="">Remember Me</label>
+                </div>
+                <br><br><br>
+
+                <button type="submit" class="btn btn-outline-dark">Submit</button>
+                
+            </form>
+        </div>
+
+        <div id="" class="signUpBox form-container text-center">
+            <form action="#">
+                <h1>Create Account</h1>
+
+                <input type="text" name="username" placeholder="Username" class="form-control my-4" required="">
+
+                <input type="email" name="email" placeholder="Email" class="form-control my-4" required="">
+
+                <input type="password" name="password" placeholder="Password" class="form-control my-4" required="">
+                <input type="password" name="password" placeholder="Repeat Password" class="form-control my-4" required="">
+
+                <div class="checkbox" style="float: left;">
+                    <label><input type="checkbox" class="mr-2" name="">I agree to Terms & Conditions </label>
+                </div><br><br><br>
+
+                <button type="submit" class="btn btn-outline-dark text-center">Submit</button>
+                
+            </form>
+        </div>
+        
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left text-capitalize">
+                    <h1>Welcome Back!</h1>
+                    <p>Login To Keep Connected With Us</p>
+                    <button class="ghost btn btn-outline-dark" (click)="changePoss(container)" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right text-capitalize">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details to get started with us</p>
+                    <button class="ghost btn btn-outline-dark" (click)="changePos(container)" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+  
+</div>
+
+
+</ion-content>

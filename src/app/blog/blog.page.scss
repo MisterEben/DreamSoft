@@ -1,0 +1,59 @@
+@import url("../../assets/bootstrap.css");
+
+.container{
+    margin: 2vh auto 0 !important;
+}
+ 
+.category{
+    display: inline-block;
+  }
+  
+  .category .nav{
+    margin-bottom: 31px;
+    padding-bottom: 0px;
+    position: relative;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    background: #faf4f4;
+  }
+  
+  .category .nav a{
+    display: block;
+    text-transform: capitalize;
+    font-size: 12px;
+    color: rgba(49,69,106,1);
+      box-shadow:  4px 4px 6px -1px rgba(0,0,0,0.2),
+                  inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                  -0.5px -0.5px 0 rgba(255,255,255,1),
+                  0.5px 0.5px 0 rgba(0,0,0,0.15),
+                  0px 12px 10px -10px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.01);
+      border-radius: 3xp;
+  }
+  
+  .category .nav a:hover{
+    transform: scale(1.2);
+  }
+
+  .trends-section-title{
+    font-size: 14px;
+    font-weight: 600;
+    background: #161a29;
+    border-left: 3px solid #ff1857;
+    opacity: 5;
+    color: #fff;
+    padding: 10px 25px;
+    text-transform: capitalize;
+  }
+  a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a:hover{
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+  }
+  
